@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
 }
+.container{
+   display: flex;
+   width: 100%;
+   min-height: 100dvh;
+   /* overflow-y: hidden;  */
+   background-color: black;  
+}
+.main1-card:hover{
+   transition: width 2s ease-in;
+   transform: scale(1.1);
+}
+.main2card-cont:hover{
+   transition: width 1s ease-in;
+   transform: scale(1.2);
+}
+.main3-cards .card1:hover{
+   transition: width 1s ease-in;
+   transform: scale(1.1);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.main3-cards .card2:hover{
+   transition: width 1s ease-in;
+   transform: scale(1.1);
+
+}
+.main3-cards .card3:hover{
+   transition: width 1s ease-in;
+   transform: scale(1.1);
+
+}
+.main4card-cont h1{
+   text-shadow: 2px 2px 15px black;
+}
+.main4card-cont h1:hover{
+   transition: width 1s ease-in-out;
+   transform: scale(1.1);
+}
+.main5card-cont:hover{
+   transition: width 1s ease-in;
+   transform: scale(1.1);
 }
